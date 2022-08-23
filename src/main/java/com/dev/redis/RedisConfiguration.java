@@ -1,4 +1,4 @@
-package com.lilium.redis;
+package com.dev.redis;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,9 +12,12 @@ public class RedisConfiguration {
     @Bean
     public LettuceConnectionFactory redisConnectionFactory() {
         final RedisStandaloneConfiguration config = new RedisStandaloneConfiguration();
-        config.setHostName("localhost");
-        config.setPort(6379);
-
+//        config.setHostName("127.0.0.1");
+        config.setHostName("redis-10976.c279.us-central1-1.gce.cloud.redislabs.com");
+        config.setPort(10976);
+        config.setUsername("admin");
+        config.setPassword("Admin@123");
+        config.setDatabase(0);
         return new LettuceConnectionFactory(config);
     }
 

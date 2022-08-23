@@ -1,4 +1,4 @@
-package com.lilium.redis;
+package com.dev.redis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.lilium.redis;
+package com.dev.redis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.lilium.redis.service.locker;
+package com.dev.redis.service.locker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +27,7 @@ public class DistributedLocker {
         try {
             return tryToGetLock(() -> {
                 final Boolean lockAcquired = valueOps.setIfAbsent(key, key, lockTimeoutSeconds, TimeUnit.SECONDS);
+//                final Boolean lockAcquired = valueOps.setIfAbsent(key, key);
                 if (lockAcquired == Boolean.FALSE) {
                     LOG.error("Failed to acquire lock for key '{}'", key);
                     return null;

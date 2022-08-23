@@ -1,4 +1,4 @@
-package com.lilium.redis.dto;
+package com.dev.redis.dto;
 
 public class RangeDTO {
     private int from;
