@@ -37,7 +37,9 @@ Task/threads	Execution time (s)	howLongShouldLockBeAcquiredSeconds (s)	lockTimeo
 
 ### Prerequisites
 Redis - 6.2.3, 
-Distributed locks, 
+Distributed locks:
+    1. https://redis.com/ebook/part-2-core-concepts/chapter-6-application-components-in-redis/6-2-distributed-locking/6-2-3-building-a-lock-in-redis/
+    2. https://redis.io/docs/reference/patterns/distributed-locks/ 
 Spring Boot - 2.4.2, 
 Java - 8
 JVM/SDK - Azul Julu version 15.0.8
