@@ -1,4 +1,4 @@
-# [Insert your hackathon title or the app's title (keep it short)]
+# Distributed lock - Redis
 
 [Insert description of app]
 
@@ -13,30 +13,41 @@ Here's a short video that explains the project and how it uses Redis:
 [![Embed your YouTube video](https://i.ytimg.com/vi/vyxdC1qK4NE/maxresdefault.jpg)](https://www.youtube.com/watch?v=vyxdC1qK4NE)
 
 ## How it works
+You have to install the application and run it to understand how distributed locks works.
 
 ### How the data is stored:
-
-Refer to [this example](https://github.com/redis-developer/basic-analytics-dashboard-redis-bitmaps-nodejs#how-the-data-is-stored) for a more detailed example of what you need for this section.
+Data is stored as keys in redis and deleted automatically once the lock is expired.
 
 ### How the data is accessed:
-
-Refer to [this example](https://github.com/redis-developer/basic-analytics-dashboard-redis-bitmaps-nodejs#how-the-data-is-accessed) for a more detailed example of what you need for this section.
+I have carried out this application as an mannual experiment and the results can be accessed in "Performance Benchmarks". Data can't be accessed as it gets deleted automatically because of expiry. 
 
 ### Performance Benchmarks
 
-[If you migrated an existing app to use Redis, please put performance benchmarks here to show the performance improvements.]
+Task/threads	Execution time (s)	howLongShouldLockBeAcquiredSeconds (s)	lockTimeoutSeconds (s)	Total keys	Total time it took to run
+10	60	62	25	8	1 min
+100	60	62	25	92	2 min
+1000	60	62	25	61	15 min
+10000	60	62	25	137	48 min
 
 ## How to run it locally?
 
-[Make sure you test this with a fresh clone of your repo, these instructions will be used to judge your app.]
+1. Fork this repository
+2. Open with Intellij or your preferred IDE, download all dependency 
+3. Run the RedisApplication, You can change the count of worker threads/locktimeout/locking time.
 
 ### Prerequisites
-
-[Fill out with any prerequisites (e.g. Node, Docker, etc.). Specify minimum versions]
+Redis - 6.2.3, 
+Distributed locks, 
+Spring Boot - 2.4.2, 
+Java - 8
+JVM/SDK - Azul Julu version 15.0.8
 
 ### Local installation
 
-[Insert instructions for local installation]
+1. Fork this repository
+2. Open with Intellij or your preferred IDE, download all dependency 
+3. Run the RedisApplication, You can change the count of worker threads/locktimeout/locking time.
+4. I have used Redis cloud with GCP infra.
 
 ## Deployment
 
