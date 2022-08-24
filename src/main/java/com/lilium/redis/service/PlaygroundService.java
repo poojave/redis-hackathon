@@ -1,7 +1,7 @@
-package com.dev.redis.service;
+package com.lilium.redis.service;
 
-import com.dev.redis.service.locker.DistributedLocker;
-import com.dev.redis.service.locker.LockExecutionResult;
+import com.lilium.redis.service.locker.DistributedLocker;
+import com.lilium.redis.service.locker.LockExecutionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ public class PlaygroundService {
 
     @PostConstruct
     private void setup() {
-        for (int i=0; i<10000; i++) { // changed this number to run this experiment
+        for (int i=0; i<10; i++) { // changed this number to run this experiment
             int finalI = i;
             CompletableFuture.runAsync(() -> runTask(String.valueOf(finalI), 60000));
         }

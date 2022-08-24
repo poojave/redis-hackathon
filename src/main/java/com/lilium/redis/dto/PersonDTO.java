@@ -1,4 +1,4 @@
-package com.dev.redis.dto;
+package com.lilium.redis.dto;
 
 import java.io.Serializable;
 

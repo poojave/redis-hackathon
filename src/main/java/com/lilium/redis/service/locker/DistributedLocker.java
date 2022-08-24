@@ -1,4 +1,4 @@
-package com.dev.redis.service.locker;
+package com.lilium.redis.service.locker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

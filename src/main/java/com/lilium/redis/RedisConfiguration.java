@@ -1,4 +1,4 @@
-package com.dev.redis;
+package com.lilium.redis;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

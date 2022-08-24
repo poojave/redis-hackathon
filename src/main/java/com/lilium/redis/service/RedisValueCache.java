@@ -1,4 +1,4 @@
-package com.dev.redis.service;
+package com.lilium.redis.service;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;

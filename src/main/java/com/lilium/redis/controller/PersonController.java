@@ -1,9 +1,9 @@
-package com.dev.redis.controller;
+package com.lilium.redis.controller;
 
-import com.dev.redis.dto.PersonDTO;
-import com.dev.redis.dto.RangeDTO;
-import com.dev.redis.service.RedisListCache;
-import com.dev.redis.service.RedisValueCache;
+import com.lilium.redis.dto.PersonDTO;
+import com.lilium.redis.dto.RangeDTO;
+import com.lilium.redis.service.RedisListCache;
+import com.lilium.redis.service.RedisValueCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

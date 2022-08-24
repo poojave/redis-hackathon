@@ -1,7 +1,7 @@
-package com.dev.redis.service;
+package com.lilium.redis.service;
 
-import com.dev.redis.dto.PersonDTO;
-import com.dev.redis.dto.RangeDTO;
+import com.lilium.redis.dto.PersonDTO;
+import com.lilium.redis.dto.RangeDTO;
 import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;

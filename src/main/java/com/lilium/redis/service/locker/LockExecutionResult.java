@@ -1,4 +1,4 @@
-package com.dev.redis.service.locker;
+package com.lilium.redis.service.locker;
 
 public class LockExecutionResult<T> {
     private final boolean lockAcquired;
